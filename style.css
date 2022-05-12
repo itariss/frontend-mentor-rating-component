@@ -1,0 +1,41 @@
+:root {
+    --background-color: linear-gradient(35deg, #3a2846, #2f1f38);
+}
+
+#rating {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: aliceblue;
+    background: var(--background-color);
+    box-shadow: black 2px 6px 20px;
+}
+
+.star {
+    align-self: flex-start;
+    color: yellow;
+}
+
+.item-radius {
+    padding: 0.52rem;
+    border-radius: 50%;
+    background-color: #432e52;
+}
+
+button {
+    margin-top: 2rem;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
