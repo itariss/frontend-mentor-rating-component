@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --background-radius: #252e36;
     --background-color: #20242f;
@@ -20,13 +26,12 @@ body {
 
 #rating,
 #post-rating {
-    width: 20rem;
+    width: 23.8rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
+    border-radius: 25px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1.6rem;
     color: var(--text-color-2);
     background: var(--background-color);
 }
@@ -34,38 +39,43 @@ body {
 h3 {
     align-self: flex-start;
     letter-spacing: 1px;
-
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    font-weight: 700;
 }
 
 .star {
     align-self: flex-start;
 }
 
+.star img {
+    transform: scale(0.9);
+}
+
 .rates {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    width: 100%;
+    justify-content: space-between;
 }
 
 p {
     font-size: 15px;
     color: var(--text-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
 }
 
 .item-radius {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    margin: 1rem .5rem;
+    width: 3.15rem;
+    height: 3.15rem;
     border-radius: 50%;
-    font-size: 15px;
     color: var(--text-color);
     background-color: var(--background-radius);
 }
+
 
 .background-radius:hover {
     cursor: pointer;
@@ -77,20 +87,20 @@ p {
     background-color: hsl(25, 97%, 53%);
     color: var(--text-color-2);
     cursor: pointer;
-
 }
 
 button {
-    margin-top: 2rem;
-    width: 90%;
-    padding: 0.8rem;
-    border-radius: 20px;
+    margin-top: 1.6rem;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 30px;
     border: none;
     transition: 400ms;
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-transform: uppercase;
+    font-weight: 700;
 
 }
 
@@ -104,33 +114,39 @@ button:hover {
     display: none;
 }
 
+#post-rating img {
+    width: 50%;
+    margin: 1rem auto;
+}
+
 #rated {
-    width: 70%;
-    height: 1.4rem;
-    line-height: 1.6rem;
+    width: 60%;
+    height: 1.8rem;
+    line-height: 2rem;
+    margin: 1rem auto;
     text-align: center;
-    margin: 1.2rem auto;
     border-radius: 20px;
     background-color: var(--background-radius);
     color: hsl(25, 97%, 53%);
 }
 
-#post-rating strong {
-    color: var(--text-color-2);
-    font-size: 120%;
+#post-rating h3 {
+    margin: auto;
+    margin: 1rem auto;
 }
 
 #post-rating p {
-    text-align: center
+    text-align: center;
 }
 
 
 footer {
     display: block;
-    position: relative;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
     text-align: center;
-    margin: 0 auto;
-    top: 15vh;
+    margin: 1rem auto;
     color: var(--text-color-2);
 }
 
@@ -142,4 +158,18 @@ footer {
 .attribution a {
     color: hsl(228, 45%, 44%);
     text-decoration: none;
+}
+
+@media screen and (max-width: 375px) {
+
+    body {
+        transform: scale(0.8);
+    }
+
+    #rating,
+    #post-rating {
+        margin-left: -0.5rem;
+    }
+
+
 }
