@@ -12,52 +12,54 @@
             href="./images/favicon-32x32.png"
         />
 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css" />
 
         <title>Frontend Mentor | Interactive rating component</title>
 
         <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-       
     </head>
     <body>
         <section id="rating">
-            	
-            <span class="item-radius star">&#9733</span>
+            <span class="star item-radius"
+                ><img src="images/icon-star.svg"
+            /></span>
             <h3>How did we do?</h3>
 
             <p>
                 Please let us know how we did with your support request. All
                 feedback is appreciated to help us improve our offering!
             </p>
-            <div class="rates">
-                <span class="item-radius">1</span>
-                <span class="item-radius">2</span>
-                <span class="item-radius">3</span>
-                <span class="item-radius">4</span>
-                <span class="item-radius">5</span>
+            <div class="rates flex-container">
+                <span class="item-radius background-radius">1</span>
+                <span class="item-radius background-radius">2</span>
+                <span class="item-radius background-radius">3</span>
+                <span class="item-radius background-radius">4</span>
+                <span class="item-radius background-radius">5</span>
             </div>
-            <button>Submit</button>
+            <button id="submit">Submit</button>
         </section>
-        <!-- Rating state start -->
 
-        <!-- Rating state end -->
+        <section id="post-rating">
+            <img src="images/illustration-thank-you.svg" alt="machine-card" />
 
-        <!-- Thank you state start -->
+            <span id="rated"></span>
+            <p>
+                <strong>Thank you!</strong><br />
+                We appreciate you taking the time to give a rating. If you ever
+                need more support, don’t hesitate to get in touch!
+            </p>
+        </section>
 
-        You selected
-        <!-- Add rating here -->
-        out of 5 Thank you! We appreciate you taking the time to give a rating.
-        If you ever need more support, don’t hesitate to get in touch!
-
-        <!-- Thank you state end -->
-
-        <div class="attribution">
-            Challenge by
-            <a
-                href="https://www.frontendmentor.io?ref=challenge"
-                target="_blank"
-                >Frontend Mentor</a
-            >. Coded by <a href="#">Your Name Here</a>.
-        </div>
+        <footer>
+            <div class="attribution">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    >Frontend Mentor</a
+                >. Coded by <a href="#">Your Name Here</a>.
+            </div>
+        </footer>
+        <script src="script.js"></script>
     </body>
 </html>
