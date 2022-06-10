@@ -19,6 +19,9 @@ rates.addEventListener("click", event => {
 });
 
 submitBtn.addEventListener("click", () => {
+    if (!rateSelected) {
+        return;
+    }
     ratingDiv.style.display = "none";
     postRatingDiv.style.display = "flex";
     ratedValue.textContent = `You selected ${rateSelected} out of 5`;
