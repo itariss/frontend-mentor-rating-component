@@ -4,6 +4,7 @@ let submitBtn = document.querySelector("#submit");
 let ratingDiv = document.querySelector("#rating");
 let postRatingDiv = document.querySelector("#post-rating");
 let ratedValue = document.querySelector("#rated");
+let rateSelected;
 
 rates.addEventListener("click", event => {
     rateSelected = event.target.innerHTML;
